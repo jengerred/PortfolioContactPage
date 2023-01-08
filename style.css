@@ -1,0 +1,349 @@
+body {
+    font-family: ariel;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+section {
+    background-color: white;
+}
+
+.sub-section-alternative {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px;
+   
+}
+
+.hero {
+    background-color: #1c1c1c;
+    height: 35vh;
+    color: white;
+    font-size: 40px;
+}
+
+footer {
+    text-decoration: none;
+    background-color: black;
+    color:white;
+    text-align: center;
+    padding: 80px;
+}
+
+nav {
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: purple;
+    box-shadow: 0 10px 20px 0 rgb(149, 0, 255);
+}
+
+nav a {
+color:white;
+text-decoration: none;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+
+nav a:hover {
+    background-color:rgb(149, 0, 255);
+	color:#fff;
+    border-radius:50%;
+    box-shadow: 0 0px 10px 20px rgb(149, 0, 255);
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    width: 500px;
+    justify-content: space-around;
+    font-size: 30px;
+    text-shadow: 1px 3px black;
+    margin-right: 30px;
+    margin-top: 30px;
+}
+
+li {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 100px;
+    font-family: cursive;
+    text-shadow: 1px 3px rgb(149, 0, 255);
+    margin-left: 30px;
+}
+h2 {
+    font-size: 50px;
+    text-decoration: none;
+    color:black;
+}
+h3 {
+    text-align: center;
+    color: black;
+    font-size: 20px;
+}
+h4 { 
+    font-size: 60px;
+  text-decoration: none;
+    color:white;
+    text-shadow: 2px 2px black;;
+    margin-left: 30px;
+}
+p  {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 300;
+    
+}
+    
+.subtext {
+    color: black;
+text-align: center;
+    font-size: 15px;
+    font-weight: 300;
+   
+}
+
+.hero-area {
+display: flex;
+height: 20vh;
+justify-content: space-between;
+align-items: center;
+}
+
+.hero-text {
+  height: 75vh;
+    margin-top: 58vh;
+    margin-left: 30px;
+    margin-bottom: 200px;
+    text-decoration: none;
+}
+
+.button {
+width: 200px;
+height: 40px;
+background-color: #800080;
+box-shadow: 0px 10px 20px rgb(149, 0, 255);
+border-radius: 30px;
+text-align: center;
+margin: 0px;
+margin-top: 10px;
+font-size: 30px;
+padding-top: 5px; 
+margin-top: 20px;
+color:white;
+text-decoration: none;
+}
+
+.button2 {
+    width: 500px;
+height: 40px;
+background-color: purple;
+box-shadow: 0px 10px 20px rgb(149, 0, 255);
+border-radius: 30px;
+text-align: center;
+margin: 10px;
+font-size: 30px;
+padding-top: 5px; 
+margin-top: 20px;
+color:white;
+text-decoration: none;
+}
+
+.button:hover, .button2:hover {
+    background-color:rgb(149, 0, 255);
+    box-shadow: 0px 10px 20px purple;
+    color:white;
+    text-decoration: none;
+}
+
+.button:active, .button2:active {
+    background-color: indigo;
+    color:white;
+    text-decoration: none;
+    
+}
+.button a, .button2 a {
+    color:white;
+    text-decoration: none;
+}
+
+.logo {
+    height: 80px;
+  margin: 20px;
+    text-shadow: 1px 3px black;
+    font-family: cursive;
+}
+.logo a:hover {
+    background-color:rgb(149, 0, 255);
+	color:#fff;
+    border-radius:50%;
+    box-shadow: 0 0px 10px 20px rgb(149, 0, 255);
+}
+
+/*This is styling for the social medial svgs (BOOTSTRAP) and links*/
+.socials {
+    margin-right: 60px;
+    padding-top: 15px;
+  
+  }
+  svg:hover {
+      transform: scale(1.3);
+      box-shadow: 0 0px 10px 20px rgb(149, 0, 255);
+      border-radius:50%;
+  }
+  /*this is the end of the styling for the social medial svgs (BOOTSTRAP) and links*/
+
+.sub-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 80px;
+    align-items: center;
+   
+}
+
+.information {
+    padding-right: 60px;
+}
+
+.project-card {
+    width: 200px;
+    min-height:450px;
+    box-shadow: 0 10px 20px 0 rgb(149, 0, 255);
+    margin: 10px;
+    padding: 10px;
+    align-items: center;
+}
+
+
+/* Using GRID LAYOUT to display the project cards */
+.wrapper {
+    display: grid;
+    grid-template-columns:  repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+      }
+
+
+ /* Using @media only for when there is only one card that fits on the screen so that that the cards be displayed along the center of the page */     
+@media only screen and (max-width: 550px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns:  repeat(auto-fill, minmax(200, 1fr));
+        grid-gap: 20px;
+        align-self: center;
+      }
+        
+    }
+
+
+.project-image {
+    margin-top: 25px;
+    width: 180px;
+    height: 180px;
+    border-radius: 125px;
+    box-shadow: 0 2px 5px 0 rgb(149, 0, 255);
+}
+
+hr {
+    height: 1px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: rgb(126, 29, 194);
+}
+br {
+    display: block; /* makes it have a width */
+    content: ""; /* clears default height */
+    margin-top: 15px; /* change this to whatever height you want it */
+}
+ 
+a img:hover {
+    transform: scale(1.3);
+}
+.contact-link a {
+    color: white;
+    text-decoration: none;
+    text-shadow: 1px 3px rgb(149, 0, 255);
+}
+
+.contact-link a:hover {
+    text-decoration: none; 
+    transform: scale(1.3);
+	color:#fff;
+    border-radius:50%;
+    background-color:rgb(149, 0, 255);
+    box-shadow: 0 0px 20px 30px rgb(149, 0, 255);
+ }
+
+ 
+ .project-link:hover {
+    transform: scale(1.3);
+	background-color:rgb(149, 0, 255);
+	color:#fff;
+    text-decoration: none;
+    box-shadow: 0 0px 10px 20px rgb(149, 0, 255);
+    border-radius:50%;
+}
+
+    .project-link {
+        text-decoration: none;
+        color:rgb(126, 29, 194);
+      
+       
+    }
+
+.hamburger {
+   display: none;
+}
+
+@media only screen and (max-width: 950px) {
+    .hamburger {
+        display: block;
+        border: 0;
+        background-color: transparent;
+        color: white;
+        margin: 20px;
+        font-size: 30px;
+        align-self: flex-end;
+    }
+
+    ul {
+        display: none;
+        background-color: purple;
+        margin: 0px;
+    }
+
+    ul.show {
+        display: block;
+    }
+
+    nav {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column-reverse;
+        background-color: purple;
+        box-shadow: 0 10px 20px 0 rgb(149, 0, 255);
+    }
+    .logo {
+        display: none;
+    }
+    h1 {
+       font-size: 69px;
+    }
+  
+}
+figcaption {
+    color:black;
+    font-size: 14px;
+}
+.border:hover {
+    box-shadow: 0 10px 20px 0 rgb(149, 0, 255);
+    border-radius: 50%;
+    transform: scale(1.3);
+}
