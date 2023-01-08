@@ -223,9 +223,9 @@ align-self: flex-end;
     .logo {
         display: none;
     }
-    h1 {
-        font-size: 69px;
-     }
+   .hero-text {
+       font-size: 69px;
+   }
 }
 
 
