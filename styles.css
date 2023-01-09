@@ -210,6 +210,8 @@ align-self: flex-end;
 
     ul.show {
         display: block;
+        margin-top: 20px;
+         margin-left: 30px;
     }
 
     nav {
