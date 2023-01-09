@@ -229,5 +229,18 @@ align-self: flex-end;
        font-size: 69px;
    }
 }
-
-
+@media only screen and (max-width: 550px) {
+    .hero-text {
+        font-size: 49px;
+    }
+}
+@media only screen and (max-width: 420px) {
+    .hero-text {
+        font-size: 39px;
+    }
+}
+@media only screen and (max-width: 360px) {
+    .hero-text {
+        font-size: 29px;
+    }
+}
